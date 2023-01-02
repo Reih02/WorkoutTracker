@@ -1,10 +1,13 @@
 import React from "react"
+import Navbar from "./Navbar"
+import Header from "./Header"
 
 class HomeContainer extends React.Component {
     render() {
         return (
-            <div className="header">
-                <h1>What's next?</h1>
+            <div>
+                <Header />
+                <Navbar />
             </div>
         )
     }

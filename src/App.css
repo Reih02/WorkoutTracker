@@ -1,3 +1,21 @@
 * {
-    background-color: white;
+    background-color: #0D3B66;
+    color: #E6E1C5;
+    font-family: "Work Sans";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    margin-left: 25vw;
+    height: 100vh;
+}
+
+.navbar-container {
+    height: 100vh;
+    margin-right: 75vw;
+    background-color: #E6E1C5;
 }
