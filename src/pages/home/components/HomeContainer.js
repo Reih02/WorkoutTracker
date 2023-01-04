@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./Navbar"
 import Header from "./Header"
 import HomeProfile from "./HomeProfile"
+import WorkoutContainer from "../../workouts/WorkoutContainer"
 
 class HomeContainer extends React.Component {
     render() {
