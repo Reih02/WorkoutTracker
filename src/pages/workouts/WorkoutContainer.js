@@ -3,7 +3,9 @@ import React from "react"
 class WorkoutContainer extends React.Component {
     render() {
         return(
-            <h1> hello from workouts page </h1>
+            <div>
+                <h1> hello from workouts page </h1>
+            </div>
         )
     }
 }

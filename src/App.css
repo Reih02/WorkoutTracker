@@ -1,12 +1,12 @@
 * {
-    background-color: #0D3B66;
     color: #E6E1C5;
     font-family: "Work Sans";
+    margin: 0; /* necessary to counter- */
+    padding: 0; /* white-space at top of screen */
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    background-color: #0D3B66;
 }
 
 .home-container {
@@ -25,6 +25,23 @@ body {
     height: 100vh;
     margin-right: 75vw;
     background-color: #E6E1C5;
+    border-right: 1px solid black;
+}
+
+.navbar-link {
+    color: #0D3B66;
+    list-style-type: none;
+    width: 25vw;
+    height: 18.658vh;
+    padding-top: 14.658vh;  
+    text-align: center;
+}
+
+.navbar-link:hover {
+    background-color: #0D3B66;
+    color: #E6E1C5;
+    border-right: 1px solid black;
+    transition: 0.4s;
 }
 
 .home-profile {
