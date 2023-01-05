@@ -1,10 +1,19 @@
 import React from "react"
+import Navbar from "../home/components/Navbar"
+
+let profileInfo = {
+    username: "reilleo",
+    workouts: 10,
+}
 
 class ProfileContainer extends React.Component {
     render() {
         return(
             <div>
-                <h1> my profile </h1>
+                <div></div>
+                <div className="navbar-container">
+                    <Navbar />
+                </div>
             </div>
         )
     }
