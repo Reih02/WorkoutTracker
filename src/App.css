@@ -75,7 +75,7 @@ body {
 }
 
 /* workouts */
-.workouts-container {
+.workouts-view {
     overflow: hidden;
     overflow-y: scroll;
     margin-top: 30vh;

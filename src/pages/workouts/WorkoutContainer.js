@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from "../home/components/Navbar"
+import WorkoutsView from "./WorkoutsView"
 import { Link } from "react-router-dom"
 
 class WorkoutContainer extends React.Component {
@@ -30,16 +31,10 @@ class WorkoutContainer extends React.Component {
     render() {
         return(
             <div>
-                <div className="workouts-container">
-                    {this.workouts.map(workout => {
-                            return (
-                                <Link to={workout.link}>
-                                    <div key={workout.id} className="workouts">
-                                        {workout.title}
-                                    </div>
-                                </Link>
-                            )
-                    })}
+                <div className="add-workout">
+                </div>
+                <div className="workouts-view">
+                    <WorkoutsView workouts={this.workouts} />
                 </div>
                 <div className="navbar-container">
                     <Navbar />
