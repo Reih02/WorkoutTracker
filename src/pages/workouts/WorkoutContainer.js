@@ -8,17 +8,22 @@ class WorkoutContainer extends React.Component {
         {
             id: 1,
             title: "Workout 1",
-            link: "/home"
+            link: "/workouts"
         },
         {
             id: 2,
             title: "Workout 2",
-            link: "/home"
+            link: "/workouts"
         },
         {
             id: 3,
             title: "Workout 3",
-            link: "/home"
+            link: "/workouts"
+        },
+        {
+            id: 4,
+            title: "Workout 4",
+            link: "/workouts"
         }
     ]
 
