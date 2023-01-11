@@ -35,20 +35,14 @@ class WorkoutContainer extends React.Component {
 
     addWorkout = () => {
         const insertAt = 0;
-        let newID = this.state.workouts.length
-        const newWorkouts = {
-            workouts: [
-                {
-                    id: newID,
-                    title: "New workout",
-                    link: "/workouts"
-                }
-                // need old workouts array here
-            ]
-        }
+        let newID = 0
+        let workouts = this.state.workouts.unshift(
+            {id: newID, title: "New workout", link: "/workouts"}
+        )
         this.setState({
-            newWorkouts
+            workouts
         })
+        console.log(this.state.workouts)
     }
 
     render() {
