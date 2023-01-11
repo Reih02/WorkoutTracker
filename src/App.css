@@ -4,6 +4,7 @@
     font-family: "Work Sans";
     margin: 0; /* necessary to counter- */
     padding: 0; /* white-space at top of screen */
+    text-decoration: none;
 }
 
 body {
@@ -75,17 +76,23 @@ body {
 }
 
 /* workouts */
+.workouts-header {
+    font-size: xx-large;
+    margin-right: 45vw;
+    padding-top: 20vh;
+    position: static;
+    float: right;
+}
+
 .workouts-view {
     overflow: hidden;
     overflow-y: scroll;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-right: 10vw;
     width: 60vw;
     height: 55vh;
     float: right;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
+    border: solid 3px black;
 }
 
 .workouts {
@@ -101,6 +108,21 @@ body {
 .workouts:hover {
     background-color: #0D3B66;
     color: #E6E1C5;
+    transition: 0.4s;
+}
+
+.add-workout-link {
+    width: 60vw;
+    text-align: center;
+    padding-top: 3vh;
+    border-left: 1px solid black;
+    height: 5vh;
+    text-decoration: none;
+}
+
+.add-workout-link:hover {
+    background-color: #E6E1C5;
+    color: #0D3B66;
     transition: 0.4s;
 }
 
