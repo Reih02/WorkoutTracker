@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 // component files
 import HomeContainer from "./pages/home/components/HomeContainer"
 import WorkoutContainer from "./pages/workouts/WorkoutContainer"
+import AddWorkout from "./pages/workouts/AddWorkout"
 import Navbar from "./pages/home/components/Navbar"
 import ProfileContainer from "./pages/profile/ProfileContainer"
 import NoMatch from "./pages/nomatch/NoMatch"
@@ -13,10 +14,12 @@ import NoMatch from "./pages/nomatch/NoMatch"
 import "./App.css"
 
 ReactDOM.render(
+    // Directory paths for links leading to other classes
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<HomeContainer />} />
             <Route path="/workouts" element={<WorkoutContainer />} />
+            <Route path="/new-workout" element={<AddWorkout />} />
             <Route path="/profile" element={<ProfileContainer />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>

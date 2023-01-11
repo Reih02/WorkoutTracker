@@ -7,7 +7,7 @@ class ProfileContainer extends React.Component {
     render() {
         return(
             <div>
-                <div className="profile-header">
+                <div className="header">
                     <ProfileHeader />
                 </div>
                 <div className="navbar-container">

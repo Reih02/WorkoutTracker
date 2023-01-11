@@ -11,6 +11,12 @@ body {
     background-color: #0D3B66;
 }
 
+button {
+    background-color: #0D3B66;
+    color: #0D3B66;
+    border: 0px;
+}
+
 /* navbar */
 .navbar-container {
     height: 100vh;
@@ -67,23 +73,8 @@ body {
 }
 
 /* profile */
-.profile-header {
-    font-size: xx-large;
-    margin-right: 30.5vw;
-    padding-top: 20vh;
-    position: static;
-    float: right;
-}
 
 /* workouts */
-.workouts-header {
-    font-size: xx-large;
-    margin-right: 45vw;
-    padding-top: 20vh;
-    position: static;
-    float: right;
-}
-
 .workouts-view {
     overflow: hidden;
     overflow-y: scroll;
@@ -111,7 +102,8 @@ body {
     transition: 0.4s;
 }
 
-.add-workout-link {
+.add-workout-button {
+    font-size: medium;
     width: 60vw;
     text-align: center;
     padding-top: 3vh;
@@ -120,11 +112,13 @@ body {
     text-decoration: none;
 }
 
-.add-workout-link:hover {
+.add-workout-button:hover {
     background-color: #E6E1C5;
     color: #0D3B66;
     transition: 0.4s;
 }
+
+/* edit workout */
 
 /* misc. */
 .error-page {
@@ -137,4 +131,9 @@ body {
     text-align: center;
     margin-top: 10vh;
     font-size: x-large;
+}
+
+input {
+    background-color: #E6E1C5;
+    color: #0D3B66;
 }

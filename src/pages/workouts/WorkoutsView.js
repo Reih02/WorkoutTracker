@@ -5,11 +5,11 @@ class WorkoutsView extends React.Component {
     render() {
         return(
             <div>
-                <Link to="/home">
-                    <div className="add-workout-link">
-                        Add a workout
+                <button type="submit" onClick={this.props.addWorkoutProps}>
+                    <div className="add-workout-button">
+                        Create a new workout
                     </div>
-                </Link>
+                </button>
                 {this.props.workouts.map(workout => {
                     return (
                         <Link to={workout.link}>

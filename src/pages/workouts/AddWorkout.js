@@ -1,13 +1,17 @@
 import React from "react"
+import Navbar from "../home/components/Navbar"
 
-class WorkoutsHeader extends React.Component {
+class EditWorkout extends React.Component {
+
     render() {
         return (
             <div>
-                Add workouts here!
+                <div className="navbar-container">
+                    <Navbar />
+                </div>
             </div>
         )
     }
 }
 
-export default WorkoutsHeader
+export default EditWorkout
