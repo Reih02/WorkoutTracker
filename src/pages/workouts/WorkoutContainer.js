@@ -8,41 +8,18 @@ import { assertExistsTypeAnnotation } from "@babel/types"
 
 class WorkoutContainer extends React.Component {
     state = {
-        workouts: [
-            {
-                id: 1,
-                title: "Workout 1",
-                link: "/workouts"
-            },
-            {
-                id: 2,
-                title: "Workout 2",
-                link: "/workouts"
-            },
-            {
-                id: 3,
-                title: "Workout 3",
-                link: "/workouts"
-            },
-            {
-                id: 4,
-                title: "Workout 4",
-                link: "/workouts"
-            }
-        ]
+        workouts: []
     }
-    
 
     addWorkout = () => {
-        const insertAt = 0;
-        let newID = 0
-        let workouts = this.state.workouts.unshift(
-            {id: newID, title: "New workout", link: "/workouts"}
-        )
+        let newId = this.state.workouts.length
+        let nextWorkouts = [
+            {id: newId, title: "New workout", link: "/workouts"},
+            ...this.state.workouts.slice(0) // done this way to avoid array mutation
+        ]
         this.setState({
-            workouts
+            workouts: nextWorkouts
         })
-        console.log(this.state.workouts)
     }
 
     render() {

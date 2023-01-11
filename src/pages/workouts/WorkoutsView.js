@@ -10,7 +10,7 @@ class WorkoutsView extends React.Component {
                         Create a new workout
                     </div>
                 </button>
-                {this.props.workouts.map(workout => {
+                {Array.from(this.props.workouts).map(workout => {
                     return (
                         <Link to={workout.link}>
                             <div key={workout.id} className="workouts">
