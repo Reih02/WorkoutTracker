@@ -12,7 +12,7 @@ class WorkoutsView extends React.Component {
                 </button>
                 {Array.from(this.props.workouts).map(workout => {
                     return (
-                        <Link to={workout.link}>
+                        <Link to={"view-workout/" + workout.id}>
                             <div key={workout.id} className="workouts">
                                 {workout.title}
                                 

@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "../home/components/Navbar"
 import WorkoutsView from "./WorkoutsView"
 import WorkoutsHeader from "./WorkoutsHeader"
-import AddWorkout from "./AddWorkout"
+import Workout from "./Workout"
 import { Link } from "react-router-dom"
 import { assertExistsTypeAnnotation } from "@babel/types"
 
@@ -14,7 +14,7 @@ class WorkoutContainer extends React.Component {
     addWorkout = () => {
         let newId = this.state.workouts.length
         let nextWorkouts = [
-            {id: newId, title: "New workout", link: "/workouts"},
+            {id: newId, title: "New workout", link: "/workouts/${}"},
             ...this.state.workouts.slice(0) // done this way to avoid array mutation
         ]
         this.setState({
@@ -24,7 +24,7 @@ class WorkoutContainer extends React.Component {
 
     removeWorkout = (workoutId) => {
         let nextWorkouts = [
-            ...this.state.workouts.filter(workout => workout.id != workoutId)
+            ...this.state.workouts.filter(workout => workout.id != workoutId) // avoids array mutation
         ]
         this.setState({
             workouts: nextWorkouts

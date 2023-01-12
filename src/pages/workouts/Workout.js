@@ -1,11 +1,14 @@
 import React from "react"
 import Navbar from "../home/components/Navbar"
 
-class EditWorkout extends React.Component {
+class Workout extends React.Component {
 
     render() {
         return (
             <div>
+                <div className="header">
+                    
+                </div>
                 <div className="navbar-container">
                     <Navbar />
                 </div>
@@ -14,4 +17,4 @@ class EditWorkout extends React.Component {
     }
 }
 
-export default EditWorkout
+export default Workout
