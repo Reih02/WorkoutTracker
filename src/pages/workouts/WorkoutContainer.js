@@ -22,6 +22,15 @@ class WorkoutContainer extends React.Component {
         })
     }
 
+    removeWorkout = (workoutId) => {
+        let nextWorkouts = [
+            ...this.state.workouts.filter(workout => workout.id != workoutId)
+        ]
+        this.setState({
+            workouts: nextWorkouts
+        })
+    }
+
     render() {
         return(
             <div>
@@ -29,7 +38,7 @@ class WorkoutContainer extends React.Component {
                     <WorkoutsHeader />
                 </div>
                 <div className="workouts-view">
-                    <WorkoutsView workouts={this.state.workouts} addWorkoutProps={this.addWorkout}/>
+                    <WorkoutsView workouts={this.state.workouts} addWorkoutProps={this.addWorkout} removeWorkoutProps={this.removeWorkout} />
                 </div>
                 <div className="navbar-container">
                     <Navbar />

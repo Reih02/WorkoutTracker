@@ -15,6 +15,14 @@ class WorkoutsView extends React.Component {
                         <Link to={workout.link}>
                             <div key={workout.id} className="workouts">
                                 {workout.title}
+                                
+                                <div className="workout-remove-button">
+                                    <button type="submit" onClick={() => {this.props.removeWorkoutProps(workout.id)}}>
+                                        <div className="workout-remove-text">
+                                            DELETE
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                         </Link>
                     )

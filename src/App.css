@@ -90,7 +90,7 @@ button {
     color: #0D3B66;
     background-color: #E6E1C5;
     width: 60vw;
-    height: 10vh;
+    height: 8vh;
     padding-top: 6.5vh;  
     text-align: center;
     border: 1px solid black;
@@ -100,6 +100,16 @@ button {
     background-color: #0D3B66;
     color: #E6E1C5;
     transition: 0.4s;
+}
+
+.workout-remove-button {
+    margin-top: 3vh;
+    color: red;
+}
+
+.workout-remove-text {
+    color: red;
+    background-color: #E6E1C5;
 }
 
 .add-workout-button {
