@@ -3,11 +3,18 @@ import Navbar from "../home/components/Navbar"
 import { useLocation } from "react-router";
 
 class Workout extends React.Component {
+
+    getState() {
+        const location = useLocation()
+        const workoutData = location.state
+        return workoutData
+    }
+
     render() {
         return (
             <div>
                 <div className="header">
-                    {this.state.workout.id}
+                    {this.getState.id}
                 </div>
                 <div className="navbar-container">
                     <Navbar />

@@ -3,12 +3,11 @@ import ReactDOM from "react-dom"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 // component files
-import HomeContainer from "./pages/home/components/HomeContainer"
-import WorkoutContainer from "./pages/workouts/WorkoutContainer"
-import Workout from "./pages/workouts/Workout"
-import Navbar from "./pages/home/components/Navbar"
-import ProfileContainer from "./pages/profile/ProfileContainer"
-import NoMatch from "./pages/nomatch/NoMatch"
+import HomeContainer from "./function-based/pages/home/components/HomeContainer"
+import WorkoutContainer from "./function-based/pages/workouts/WorkoutContainer"
+import Workout from "./function-based/pages/workouts/Workout"
+import ProfileContainer from "./function-based/pages/profile/ProfileContainer"
+import NoMatch from "./function-based/pages/nomatch/NoMatch"
 
 //stylesheet
 import "./App.css"
