@@ -10,11 +10,10 @@ const WorkoutContainer = () => {
 
     const addWorkout = () => {
         let newId = Array.from(workouts).length // new id will always be one more than length of array, thus always has unique key
-        let nextWorkout = [
-            {id: newId, title: "New workout", link: "/workouts/${}"}
-        ]
+        let nextWorkout = {
+            id: newId, title: "New workout"
+        }
         setWorkouts([nextWorkout, ...workouts])
-        console.log(workouts)
     }
 
     const removeWorkout = (workoutId) => {

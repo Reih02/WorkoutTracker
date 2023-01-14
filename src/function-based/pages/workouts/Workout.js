@@ -1,19 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "../home/components/Navbar"
 import { useLocation } from "react-router";
 
 const Workout = () => {
 
-    const GetState = () => {
-        const location = useLocation()
-        const workoutData = location.state
-        return workoutData
-    }
+    const location = useLocation()
 
     return (
         <div>
             <div className="header">
-                {this.getState.id}
+                Workout Title: {location.state.title}
             </div>
             <div className="navbar-container">
                 <Navbar />

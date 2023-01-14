@@ -1,7 +1,13 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const WorkoutsView = props => {
+    const navigate = useNavigate()
+
+    const toWorkout = (workout) => {
+        navigate(`view-workout/${workout.id}`, {state: workout})
+    }
+
     return(
         <div>
             <button type="submit" onClick={() => props.addWorkoutProps()}>
@@ -11,12 +17,7 @@ const WorkoutsView = props => {
             </button>
             {Array.from(props.workouts).map(workout => {
                 return (
-                    <Link
-                        to={{
-                            pathname: `view-workout/${workout.id}`,
-                            state: { workout }
-                        }}
-                        >
+                    <a onClick={() => {toWorkout(workout)}}>
                         <div key={workout.id} className="workouts">
                             {workout.title}
                             
@@ -28,7 +29,7 @@ const WorkoutsView = props => {
                                 </button>
                             </div>
                         </div>
-                    </Link>
+                    </a>
                 )
             })}
         </div>
