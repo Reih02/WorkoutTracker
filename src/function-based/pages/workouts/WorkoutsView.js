@@ -17,19 +17,22 @@ const WorkoutsView = props => {
             </button>
             {Array.from(props.workouts).map(workout => {
                 return (
-                    <a onClick={() => {toWorkout(workout)}}>
-                        <div key={workout.id} className="workouts">
-                            {workout.title}
-                            
-                            <div className="workout-remove-button">
-                                <button type="submit" onClick={() => props.removeWorkoutProps(workout.id)}>
-                                    <div className="workout-remove-text">
-                                        DELETE
-                                    </div>
-                                </button>
+                    <div>
+                        <a onClick={() => {toWorkout(workout)}}>
+                            <div key={workout.id} className="workouts">
+                                {workout.title}
                             </div>
+                        </a>
+                                
+                        <div className="workout-remove-button">
+                            {workout.id}
+                            <button type="submit" onClick={() => props.removeWorkoutProps(workout.id)}>
+                                <div className="workout-remove-text">
+                                    DELETE
+                                </div>
+                            </button>
                         </div>
-                    </a>
+                    </div>
                 )
             })}
         </div>

@@ -17,12 +17,11 @@ const WorkoutContainer = () => {
     }
 
     const removeWorkout = (workoutId) => {
+        console.log(workoutId)
         let nextWorkouts = [
             ...workouts.filter(workout => workout.id != workoutId) // avoids array mutation
         ]
-        setWorkouts({
-            workouts: nextWorkouts
-        })
+        setWorkouts(nextWorkouts)
     }
 
     return(

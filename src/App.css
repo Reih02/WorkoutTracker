@@ -103,7 +103,8 @@ button {
 }
 
 .workout-remove-button {
-    margin-top: 3vh;
+    margin-top: -4vh;
+    text-align: center;
     color: red;
 }
 
