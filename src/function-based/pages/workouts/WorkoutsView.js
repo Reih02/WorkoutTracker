@@ -25,7 +25,6 @@ const WorkoutsView = props => {
                         </a>
                                 
                         <div className="workout-remove-button">
-                            {workout.id}
                             <button type="submit" onClick={() => props.removeWorkoutProps(workout.id)}>
                                 <div className="workout-remove-text">
                                     DELETE

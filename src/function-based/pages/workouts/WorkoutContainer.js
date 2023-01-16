@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Navbar from "../home/components/Navbar"
 import WorkoutsView from "./WorkoutsView"
 import WorkoutsHeader from "./WorkoutsHeader"
@@ -23,6 +23,17 @@ const WorkoutContainer = () => {
         ]
         setWorkouts(nextWorkouts)
     }
+
+    useEffect(() => { // gets localstorage and copies values (if found) into state
+        const data = window.localStorage.getItem('MY_WORKOUTS');
+        if (data !== null) {
+            setWorkouts(JSON.parse(data))
+        } 
+      }, []);
+
+    useEffect (() => { // stores workouts in localstorage whenever array is changed for persistent storage
+        window.localStorage.setItem('MY_WORKOUTS', JSON.stringify(Array.from(workouts)))
+    }, [workouts])
 
     return(
         <div>
