@@ -17,6 +17,10 @@ button {
     border: 0px;
 }
 
+form {
+    text-align: center;
+}
+
 /* navbar */
 .navbar-container {
     height: 100vh;
@@ -130,6 +134,13 @@ button {
 }
 
 /* edit workout */
+.workout-header {
+    font-size: xx-large;
+    margin-right: 30vw;
+    padding-top: 20vh;
+    position: static;
+    float: right;   
+}
 
 /* misc. */
 .error-page {

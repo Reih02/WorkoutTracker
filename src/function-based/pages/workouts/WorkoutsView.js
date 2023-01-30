@@ -10,11 +10,14 @@ const WorkoutsView = props => {
 
     return(
         <div>
-            <button type="submit" onClick={() => props.addWorkoutProps()}>
-                <div className="add-workout-button">
-                    Create a new workout
-                </div>
-            </button>
+            <form>
+                <input type="text" id="workoutTitleInput" placeholder="Enter the workout title..."/>
+                <button type="submit" onClick={() => props.addWorkoutProps(document.getElementById("workoutTitleInput").value)}>
+                    <div className="add-workout-button">
+                        Create a new workout
+                    </div>
+                </button>
+            </form>
             {Array.from(props.workouts).map(workout => {
                 return (
                     <div>

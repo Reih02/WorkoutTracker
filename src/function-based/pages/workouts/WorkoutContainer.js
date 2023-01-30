@@ -8,10 +8,10 @@ import { Link } from "react-router-dom"
 const WorkoutContainer = () => {
     const [workouts, setWorkouts] = useState([]) // init state with empty array to hold workouts
 
-    const addWorkout = () => {
+    const addWorkout = (workoutTitle) => {
         let newId = Array.from(workouts).length // new id will always be one more than length of array, thus always has unique key
         let nextWorkout = {
-            id: newId, title: "New workout"
+            id: newId, title: workoutTitle
         }
         setWorkouts([nextWorkout, ...workouts])
     }
