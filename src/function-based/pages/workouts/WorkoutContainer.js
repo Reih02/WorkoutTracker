@@ -9,6 +9,9 @@ const WorkoutContainer = () => {
     const [workouts, setWorkouts] = useState([]) // init state with empty array to hold workouts
 
     const addWorkout = (workoutTitle) => {
+        if (workoutTitle.length < 1) {
+            workoutTitle = "New workout"
+        }
         let newId = Array.from(workouts).length // new id will always be one more than length of array, thus always has unique key
         let nextWorkout = {
             id: newId, title: workoutTitle
