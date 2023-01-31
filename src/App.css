@@ -133,6 +133,39 @@ form {
     transition: 0.4s;
 }
 
+.exercises-view {
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 10vh;
+    margin-right: 10vw;
+    width: 60vw;
+    height: 55vh;
+    float: right;
+    border: solid 3px black;
+}
+
+.exercises-view:hover {
+    background-color: #0D3B66;
+    color: #E6E1C5;
+    transition: 0.4s;
+}
+
+.exercises {
+    color: #0D3B66;
+    background-color: #E6E1C5;
+    width: 60vw;
+    height: 8vh;
+    padding-top: 6.5vh;  
+    text-align: center;
+    border: 1px solid black;
+}
+
+.exercises:hover {
+    background-color: #0D3B66;
+    color: #E6E1C5;
+    transition: 0.4s;
+}
+
 /* edit workout */
 .workout-header {
     font-size: xx-large;
@@ -140,15 +173,6 @@ form {
     padding-top: 20vh;
     position: static;
     float: right;  
-}
-
-.workout-exercises-container {
-    margin-top: 10vh;
-    margin-right: 10vw;
-    width: 60vw;
-    height: 55vh;
-    float: right;
-    border: 2px solid black;
 }
 
 /* misc. */

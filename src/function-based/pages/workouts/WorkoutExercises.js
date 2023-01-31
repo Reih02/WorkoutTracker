@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 
 const WorkoutExercises = props => {
     return (
-        <div className="workout-exercises-container">
+        <div>
             {Array.from(props.exercises).map(exercise => {
                 return (
                     <div>
