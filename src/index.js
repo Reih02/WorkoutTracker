@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomeContainer from "./function-based/pages/home/components/HomeContainer"
 import WorkoutContainer from "./function-based/pages/workouts/WorkoutContainer"
 import Workout from "./function-based/pages/workouts/Workout"
+import WorkoutExercises from "./function-based/pages/workouts/WorkoutExercises"
 import ProfileContainer from "./function-based/pages/profile/ProfileContainer"
 import NoMatch from "./function-based/pages/nomatch/NoMatch"
 

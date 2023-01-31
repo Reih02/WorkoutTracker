@@ -136,10 +136,19 @@ form {
 /* edit workout */
 .workout-header {
     font-size: xx-large;
-    margin-right: 30vw;
+    margin-right: 50vw;
     padding-top: 20vh;
     position: static;
-    float: right;   
+    float: right;  
+}
+
+.workout-exercises-container {
+    margin-top: 10vh;
+    margin-right: 10vw;
+    width: 60vw;
+    height: 55vh;
+    float: right;
+    border: 2px solid black;
 }
 
 /* misc. */
