@@ -1,20 +1,12 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import { useLocation } from "react-router";
 
-const WorkoutExercises = props => {
-    return (
-        <div>
-            {Array.from(props.exercises).map(exercise => {
-                return (
-                    <div>
-                        <div className="exercises">
-                            {exercise[0]}  ||  {exercise[1]} sets  ||  {exercise[2]} reps
-                        </div>        
-                    </div>
-                )
-            })}
-        </div>
-    )
-}
+const WorkoutExercises = (props) => {
+  Array.from(props.exercises).map((exercise) => {
+    if (exercise[0] == props.workoutID) {
+      console.log(props.workoutID);
+    }
+  });
+};
 
-export default WorkoutExercises
+export default WorkoutExercises;
