@@ -6,16 +6,22 @@ import WorkoutExercises from "./WorkoutExercises";
 const Workout = () => {
   const [exerciseArray, setExercises] = useState([
     [
-      1,
+      0.46969949751866613,
       [
-        ["Bench press", "3 sets", "8-10 reps"],
+        ["Bench press", "3", "8-10"],
         ["Barbell rows", "3", "8-10"],
         ["Chest flyes", "4", "10-12"],
         ["Lat pulldowns", "4", "10-12"],
         ["Machine row", "3", "10-12"],
       ],
     ],
-    [2, ["Curls", "3", "10-12"], ["Extensions", "3", "10-12"]],
+    [
+      0.38844178397623974,
+      [
+        ["Curls", "3", "10-12"],
+        ["Extensions", "3", "10-12"],
+      ],
+    ],
   ]);
   const location = useLocation();
 
